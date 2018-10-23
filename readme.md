@@ -6,7 +6,7 @@ A collection of tools for creating [React](https://github.com/facebook/react/) a
 - [Yarn 1.9.4](https://yarnpkg.com/)
 
 ## tools
-- `next-server.js` - allows a simple server that always renders the root page every time
+- `next-server.js` - a replacement for `server.js` within a [Next.js](https://github.com/zeit/next.js/) app that always renders the root page every time
 - `spa-server-maker` - creates a server from the `build` folder and serves `index.html` for all requests
 - `spa-server` - starts an spa server using `spa-server-maker`
 - `sync-routing` - for use within the `_app.js` of a [Next.js](https://github.com/zeit/next.js/) app

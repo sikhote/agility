@@ -1,0 +1,29 @@
+{
+		"name": "agility",
+		"description": "A collection of tools for creating React and Next.js apps",
+		"author": "David Sinclair",
+		"homepage": "https://sinclair.tech",
+		"version": "0.0.1",
+		"scripts": {
+				"lint": "eslint \"./**/*.js\"",
+				"pretty": "prettier --write \"./**/*.js\"",
+				"ci": "yarn pretty -l && yarn lint"
+		},
+		"dependencies": {
+				"babel-eslint": "8.0.1",
+				"eslint": "4.19.0",
+				"eslint-config-airbnb": "16.1.0",
+				"eslint-config-prettier": "2.8.0",
+				"eslint-plugin-import": "2.11.0",
+				"eslint-plugin-jsx-a11y": "6.0.2",
+				"eslint-plugin-react": "7.5.1",
+				"express": "^4.16.4",
+				"express-history-api-fallback": "^2.2.1",
+				"lodash": "4.17.5",
+				"prettier": "1.14.2",
+				"query-parse": "2.0.0"
+		},
+		"peerDependencies": {
+				"next": "^7.0.1"
+		}
+}

@@ -1,3 +1,7 @@
+[![Circle CI](https://img.shields.io/circleci/project/sikhote/interplay.app/master.svg)](https://circleci.com/gh/sikhote/agility)
+[![Dependency Status](https://david-dm.org/sikhote/agility.svg)](https://david-dm.org/sikhote/agility.app)
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+
 # agility
 A collection of tools for creating [React](https://github.com/facebook/react/) and [Next.js](https://github.com/zeit/next.js/) apps.
 

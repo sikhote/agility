@@ -1,29 +1,39 @@
 {
-		"name": "agility",
-		"description": "A collection of tools for creating React and Next.js apps",
-		"author": "David Sinclair",
-		"homepage": "https://sinclair.tech",
-		"version": "0.0.1",
-		"scripts": {
-				"lint": "eslint \"./**/*.js\"",
-				"pretty": "prettier --write \"./**/*.js\"",
-				"ci": "yarn pretty -l && yarn lint"
-		},
-		"dependencies": {
-				"babel-eslint": "8.0.1",
-				"eslint": "4.19.0",
-				"eslint-config-airbnb": "16.1.0",
-				"eslint-config-prettier": "2.8.0",
-				"eslint-plugin-import": "2.11.0",
-				"eslint-plugin-jsx-a11y": "6.0.2",
-				"eslint-plugin-react": "7.5.1",
-				"express": "^4.16.4",
-				"express-history-api-fallback": "^2.2.1",
-				"lodash": "4.17.5",
-				"prettier": "1.14.2",
-				"query-parse": "2.0.0"
-		},
-		"peerDependencies": {
-				"next": "^7.0.1"
-		}
+  "name": "agility",
+	"author": "David Sinclair <david@sinclair.tech> (https://sinclair.tech)",
+  "description": "A collection of tools for creating React and Next.js apps",
+	"main": "./dist/index.js",
+  "homepage": "https://github.com/sikhote/agility",
+	"license": "MIT",
+  "version": "0.0.1",
+  "scripts": {
+    "ci": "yarn pretty -l && yarn lint",
+    "lint": "eslint \"./**/*.js\"",
+    "pretty": "prettier --write \"./**/*.js\"",
+    "spa-server": "node dist/spa-server.js",
+		"next-server": "node dist/next-server.js",
+		"babel": "babel src --out-dir dist"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-eslint": "8.0.1",
+    "eslint": "4.19.0",
+    "eslint-config-airbnb": "16.1.0",
+    "eslint-config-prettier": "2.8.0",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.5.1",
+    "express": "^4.16.4",
+    "express-history-api-fallback": "^2.2.1",
+    "lodash": "4.17.5",
+    "prettier": "1.14.2",
+    "query-parse": "2.0.0"
+  },
+  "peerDependencies": {
+    "next": "^7.0.1"
+  }
 }

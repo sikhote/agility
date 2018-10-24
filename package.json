@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "homepage": "https://github.com/sikhote/parlor",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "scripts": {
     "ci": "yarn pretty -l && yarn lint",
     "eslint": "eslint \"./**/*.js\"",
@@ -13,7 +13,7 @@
     "spa-server": "node dist/spa-server.js",
     "next-server": "node dist/next-server.js",
     "babel": "babel src --out-dir dist",
-    "publish": "yarn babel && npm publish"
+    "publisher": "yarn babel; yarn publish"
   },
   "dependencies": {
     "@babel/cli": "^7.1.2",

@@ -6,11 +6,11 @@ const appRoot = require('app-root-path');
 const app = express();
 const port = 3000;
 
-module.exports = (done, base = appRoot) => {
+module.exports = (done, base = appRoot.toString()) => {
   const root = path.join(base, '/build');
 
-  app.use('/', express.static(root));
-  app.use('/', fallback('index.html', { root }));
+  app.use(express.static(root));
+  app.use(fallback('index.html', { root }));
 
   const server = app.listen(port, () => {
     // eslint-disable-next-line no-console

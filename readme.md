@@ -1,3 +1,4 @@
+[![NPM version](https://img.shields.io/npm/v/parlor.svg)](https://www.npmjs.com/package/parlor)
 [![CircleCI](https://circleci.com/gh/sikhote/parlor.svg?style=svg)](https://circleci.com/gh/sikhote/parlor)
 [![Dependency Status](https://david-dm.org/sikhote/parlor.svg)](https://david-dm.org/sikhote/parlor.app)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)

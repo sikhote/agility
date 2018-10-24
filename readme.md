@@ -3,7 +3,27 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 # parlor
-A collection of tools for creating [React](https://github.com/facebook/react/) and [Next.js](https://github.com/zeit/next.js/) apps.
+A collection of tools for creating [React](https://github.com/facebook/react/) and [Next.js](https://github.com/zeit/next.js/) apps
+
+## how to use
+1. Install: `yarn add parlor` or `npm i -S parlor`
+2. Use:
+  ```
+  ...
+  import { syncRouting } from 'parlor';
+  import { matches, getCurrentPath, pages } from '../lib/routing';
+  ...
+
+  class ReduxApp extends NextApp {
+    ...
+    componentDidMount() {
+      syncRouting({ matches, getCurrentPath, pages });
+    }
+    ...
+  }
+
+  export default ReduxApp;
+  ```
 
 ## requirements
 - [Node 8 LTS](https://nodejs.org/)

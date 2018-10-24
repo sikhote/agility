@@ -1,5 +1,14 @@
 module.exports = {
-  presets: ['@babel/preset-env'],
+  presets: [
+    [
+      '@babel/preset-env',
+      {
+        targets: {
+          node: true,
+        },
+      },
+    ],
+  ],
   plugins: [
     '@babel/plugin-proposal-object-rest-spread',
     '@babel/plugin-proposal-class-properties',

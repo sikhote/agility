@@ -1,3 +1,3 @@
-const spaServerMaker = require('./spa-server-maker');
+import spaServerMaker from './spa-server-maker';
 
 spaServerMaker();

@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "homepage": "https://github.com/sikhote/parlor",
   "license": "MIT",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "scripts": {
     "ci": "yarn pretty -l && yarn lint",
     "eslint": "eslint \"./**/*.js\"",
@@ -21,6 +21,7 @@
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
+    "app-root-path": "^2.1.0",
     "babel-eslint": "8.0.1",
     "eslint": "4.19.0",
     "eslint-config-airbnb": "16.1.0",

@@ -1,19 +1,19 @@
 {
   "name": "parlor",
-	"author": "David Sinclair <david@sinclair.tech> (https://sinclair.tech)",
+  "author": "David Sinclair <david@sinclair.tech> (https://sinclair.tech)",
   "description": "A collection of tools for creating React and Next.js apps",
-	"main": "./dist/index.js",
+  "main": "./dist/index.js",
   "homepage": "https://github.com/sikhote/parlor",
-	"license": "MIT",
+  "license": "MIT",
   "version": "0.0.1",
   "scripts": {
     "ci": "yarn pretty -l && yarn lint",
-    "lint": "eslint \"./**/*.js\"",
-    "pretty": "prettier --write \"./**/*.js\"",
+    "eslint": "eslint \"./**/*.js\"",
+    "prettier": "prettier --write \"./**/*.js\"",
     "spa-server": "node dist/spa-server.js",
-		"next-server": "node dist/next-server.js",
-		"babel": "babel src --out-dir dist",
-		"publish": "npm publish "
+    "next-server": "node dist/next-server.js",
+    "babel": "babel src --out-dir dist",
+    "publish": "yarn babel && npm publish"
   },
   "dependencies": {
     "@babel/cli": "^7.1.2",
@@ -27,10 +27,9 @@
     "eslint-config-prettier": "2.8.0",
     "eslint-plugin-import": "2.11.0",
     "eslint-plugin-jsx-a11y": "6.0.2",
-    "eslint-plugin-react": "7.5.1",
+    "eslint-plugin-react": "^7.4.0",
     "express": "^4.16.4",
     "express-history-api-fallback": "^2.2.1",
-    "lodash": "4.17.5",
     "prettier": "1.14.2",
     "query-parse": "2.0.0"
   },

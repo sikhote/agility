@@ -6,8 +6,8 @@ const appRoot = require('app-root-path');
 const app = express();
 const port = 3000;
 
-module.exports = done => {
-  const root = path.join(appRoot, '/build');
+module.exports = (done, base = appRoot) => {
+  const root = path.join(base, '/build');
 
   app.get('/', (req, res) => res.send('This server only serves /docs'));
   app.use('/docs', express.static(root));

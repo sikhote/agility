@@ -1,9 +1,9 @@
 {
-  "name": "agility",
+  "name": "parlor",
 	"author": "David Sinclair <david@sinclair.tech> (https://sinclair.tech)",
   "description": "A collection of tools for creating React and Next.js apps",
 	"main": "./dist/index.js",
-  "homepage": "https://github.com/sikhote/agility",
+  "homepage": "https://github.com/sikhote/parlor",
 	"license": "MIT",
   "version": "0.0.1",
   "scripts": {
@@ -12,7 +12,8 @@
     "pretty": "prettier --write \"./**/*.js\"",
     "spa-server": "node dist/spa-server.js",
 		"next-server": "node dist/next-server.js",
-		"babel": "babel src --out-dir dist"
+		"babel": "babel src --out-dir dist",
+		"publish": "npm publish "
   },
   "dependencies": {
     "@babel/cli": "^7.1.2",

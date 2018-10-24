@@ -9,9 +9,8 @@ const port = 3000;
 module.exports = (done, base = appRoot) => {
   const root = path.join(base, '/build');
 
-  app.get('/', (req, res) => res.send('This server only serves /docs'));
-  app.use('/docs', express.static(root));
-  app.use('/docs', fallback('index.html', { root }));
+  app.use('/', express.static(root));
+  app.use('/', fallback('index.html', { root }));
 
   const server = app.listen(port, () => {
     // eslint-disable-next-line no-console

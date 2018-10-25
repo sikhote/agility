@@ -5,13 +5,13 @@
 [![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg)](https://twitter.com/acdlite/status/974390255393505280)
 
 # parlor
-A collection of tools for creating [React](https://github.com/facebook/react/) and [Next.js](https://github.com/zeit/next.js/) apps
+A collection of tools for creating [React](https://github.com/facebook/react/) and [Next.js](https://github.com/zeit/next.js/) apps.
 
 ## install
 `yarn add parlor` or `npm i -S parlor`
 
 ## usage
-Actual examples can be found at the [interplay.app](https://github.com/sikhote/interplay.app) repository.
+Detailed examples can be found at the [interplay.app](https://github.com/sikhote/interplay.app) repository.
 
 ### syncRouting
 Sync some routing on a single page app within `_app.js` of a Next app.
@@ -32,7 +32,9 @@ class ReduxApp extends NextApp {
 
 ### next-server
 A replacement for `server.js` within a Next app that always renders the root page.
-`$ node node_modules/parlor/dist/next-server.js`
+```
+$ node node_modules/parlor/dist/next-server.js
+```
 
 ### spa-server-maker
 Use to generate a SPA server that serves the `build` directory's `index.html` and static files. This is useful running a server for E2E tests through [Nightwatch.js](http://nightwatchjs.org/).
@@ -46,7 +48,9 @@ server.close();
 
 ### spa-server
 Starts an SPA server using `spa-server-maker`.
-`$ node node_modules/parlor/dist/spa-server.js`
+```
+$ node node_modules/parlor/dist/spa-server.js
+```
 
 ## requirements
 - [Node 8 LTS](https://nodejs.org/)

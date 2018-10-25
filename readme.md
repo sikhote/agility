@@ -13,21 +13,42 @@ A collection of tools for creating [React](https://github.com/facebook/react/) a
 ## usage
 Detailed examples can be found at the [interplay.app](https://github.com/sikhote/interplay.app) repository.
 
-### syncRouting and getCurrentPath
+### syncRouting
 Sync some routing on a single page app within `_app.js` of a Next app.
 ```
 ...
-import { syncRouting, getCurrentPath } from 'parlor';
-import { matches, getCurrentPath, pages } from '../lib/routing';
+import { syncRouting } from 'parlor';
+import { matches, pages } from '../lib/routing';
 ...
 
 class ReduxApp extends NextApp {
   ...
   componentDidMount() {
-    syncRouting({ matches, getCurrentPath, pages });
+    syncRouting({ matches, pages });
   }
   ...
 }
+```
+
+### getCurrentPath
+Get the current browser path in a cross-platform friendly way. Defaults to an empty string.
+```
+import { getCurrentPath } from 'parlor';
+const currentPath = getCurrentPath();
+```
+
+### getLocale
+Get the current locale in a cross-platform friendly way. Defaults to `en`.
+```
+import { getLocale } from 'parlor';
+const locale = getLocale();
+```
+
+### matchesGenerator
+Generates matches that can be used for determining if a path matches a valid route.
+```
+const { matchesGenerator } = require('parlor');
+exports.matches = matchesGenerator('/:page/:alpha');
 ```
 
 ### next-server

@@ -1,5 +1,5 @@
 [![NPM version](https://img.shields.io/npm/v/parlor.svg)](https://www.npmjs.com/package/parlor)
-[![CircleCI Build Status](https://img.shields.io/circleci/project/github/sikhote/parlor)](https://circleci.com/gh/sikhote/parlor)
+[![CircleCI Build Status](https://img.shields.io/circleci/project/github/sikhote/parlor/master.svg?label=CircleCI)](https://circleci.com/gh/sikhote/parlor)
 [![Dependency Status](https://david-dm.org/sikhote/parlor.svg)](https://david-dm.org/sikhote/parlor)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg)](https://twitter.com/acdlite/status/974390255393505280)

@@ -22,9 +22,12 @@ import { matches, pages } from '../lib/routing';
 ...
 
 class ReduxApp extends NextApp {
+  state = {
+    synced: false,
+  };
   ...
   componentDidMount() {
-    syncRouting({ matches, pages });
+    syncRouting(matches, pages, () => this.setState({ synced: true }));
   }
   ...
 }

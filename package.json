@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "homepage": "https://github.com/sikhote/parlor",
   "license": "MIT",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "scripts": {
     "ci": "yarn prettier -l && yarn eslint",
     "eslint": "eslint \"./**/*.js\"",

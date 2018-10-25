@@ -10,7 +10,8 @@ A collection of tools for creating [React](https://github.com/facebook/react/) a
 ## install
 `yarn add parlor` or `npm i -S parlor`
 
-## useage
+## usage
+Actual examples can be found at the [interplay.app](https://github.com/sikhote/interplay.app) repository.
 
 ### syncRouting
 Sync some routing on a single page app within `_app.js` of a Next app.
@@ -27,6 +28,7 @@ class ReduxApp extends NextApp {
   }
   ...
 }
+```
 
 ### next-server
 A replacement for `server.js` within a Next app that always renders the root page.

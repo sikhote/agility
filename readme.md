@@ -13,11 +13,11 @@ A collection of tools for creating [React](https://github.com/facebook/react/) a
 ## usage
 Detailed examples can be found at the [interplay.app](https://github.com/sikhote/interplay.app) repository.
 
-### syncRouting
+### syncRouting and getCurrentPath
 Sync some routing on a single page app within `_app.js` of a Next app.
 ```
 ...
-import { syncRouting } from 'parlor';
+import { syncRouting, getCurrentPath } from 'parlor';
 import { matches, getCurrentPath, pages } from '../lib/routing';
 ...
 
@@ -37,7 +37,7 @@ $ node node_modules/parlor/dist/next-server.js
 ```
 
 ### spa-server-maker
-Use to generate a SPA server that serves the `build` directory's `index.html` and static files. This is useful running a server for E2E tests through [Nightwatch.js](http://nightwatchjs.org/).
+Use to generate an SPA server that serves the `build` directory's `index.html` and static files. This is useful when running a server for E2E tests using [Nightwatch.js](http://nightwatchjs.org/).
 ```
 const spaServerMaker = require('parlor/dist/spa-server-maker.js');
 const appRoot = require('app-root-path');

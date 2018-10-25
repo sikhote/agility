@@ -1,7 +1,8 @@
 import Router from 'next/router';
 import qp from 'query-parse';
+import getCurrentPath from './get-current-path';
 
-export default ({ matches, getCurrentPath, pages }) => {
+export default ({ matches, pages }) => {
   const currentPath = getCurrentPath();
   const match = matches.find(m => m(currentPath));
   const { page = '', alpha = '', ...params } = match ? match(currentPath) : {};

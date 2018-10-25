@@ -7,11 +7,9 @@
   "license": "MIT",
   "version": "0.0.13",
   "scripts": {
-    "ci": "yarn pretty -l && yarn lint",
+    "ci": "yarn prettier -l && yarn eslint",
     "eslint": "eslint \"./**/*.js\"",
     "prettier": "prettier --write \"./**/*.js\"",
-    "spa-server": "node dist/spa-server.js",
-    "next-server": "node dist/next-server.js",
     "babel": "babel src --out-dir dist",
     "publisher": "yarn babel; yarn publish"
   },

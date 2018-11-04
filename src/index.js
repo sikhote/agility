@@ -5,3 +5,6 @@ export { default as getCurrentPath } from './get-current-path';
 export { default as getLocale } from './get-locale';
 export { default as getDimensions } from './get-dimensions';
 export { default as DimensionsContext } from './DimensionsContext';
+export {
+  default as dimensionsChangeThrottler,
+} from './dimensions-change-throttler';

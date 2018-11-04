@@ -83,6 +83,17 @@ import { getDimensions } from 'parlor';
 const { width, height } = getDimensions();
 ```
 
+### dimensions-change-throttler
+Function that can be used to throttle the window resize callback. Truthfully, it could be used to throttle anything.
+```
+import { dimensionsChangeThrottler } from 'parlor';
+
+...
+  onDimensionsChange() {
+		throttledOnDimensionsChange(() => this.setState(getDimensions()));
+	}
+```
+
 ### DimensionsContext
 Context provider for dimensions of page. Recommended to be used with some sort of throttling.
 ```

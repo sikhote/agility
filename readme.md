@@ -106,7 +106,7 @@ const SomeComponent = () => (
 ## requirements
 - [Node 8 LTS](https://nodejs.org/)
 - [Yarn 1.9.4](https://yarnpkg.com/)
-- Peer dependencies: `next`
+- Peer dependencies: `next`, `react`
 
 ## commands
 - `yarn` to install NPM packages

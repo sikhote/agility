@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "homepage": "https://github.com/sikhote/parlor",
   "license": "MIT",
-  "version": "0.0.17",
+  "version": "0.1.0",
   "scripts": {
     "ci": "yarn prettier -l && yarn eslint",
     "eslint": "eslint \"./**/*.js\"",
@@ -36,6 +36,6 @@
   },
   "peerDependencies": {
     "next": "^7.0.1",
-		"react": "16.3.1"
+    "react": "16.3.1"
   }
 }

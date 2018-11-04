@@ -76,6 +76,33 @@ Starts an SPA server using `spa-server-maker`.
 $ node node_modules/parlor/dist/spa-server.js
 ```
 
+### get-dimensions
+Gets the window dimensions. If not on browser, returns `0` for each dimension.
+```
+import { getDimensions } from 'parlor';
+const { width, height } = getDimensions();
+```
+
+### DimensionsContext
+Context provider for dimensions of page. Recommended to be used with some sort of throttling.
+```
+import { DimensionsContext } from 'parlor';
+
+const App = () => (
+  <DimensionsContext.Provider value={{ height, width }}>
+    ...
+  </DimensionsContext.Provider>
+);
+
+const SomeComponent = () => (
+  <DimensionsContext.Consumer>
+    {({ width }) => (
+      ...
+    )}
+  </DimensionsContext.Consumer>
+);
+```
+
 ## requirements
 - [Node 8 LTS](https://nodejs.org/)
 - [Yarn 1.9.4](https://yarnpkg.com/)

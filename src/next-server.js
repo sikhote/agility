@@ -2,6 +2,7 @@ import { createServer } from 'http';
 import next from 'next';
 import { join } from 'path';
 import { parse } from 'url';
+import appRoot from 'app-root-path';
 
 const port = parseInt(process.env.PORT, 10) || 3000;
 const dev = process.env.NODE_ENV !== 'production';
@@ -13,7 +14,7 @@ app.prepare().then(() =>
     const { pathname } = parsedUrl;
 
     if (pathname === '/service-worker.js') {
-      app.serveStatic(req, res, join(__dirname, '.next', pathname));
+      app.serveStatic(req, res, join(appRoot, '.next', pathname));
     } else {
       app.render(req, res, '/');
     }

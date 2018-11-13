@@ -14,7 +14,7 @@ app.prepare().then(() =>
     const { pathname } = parsedUrl;
 
     if (pathname === '/service-worker.js') {
-      app.serveStatic(req, res, join(appRoot, '.next', pathname));
+      app.serveStatic(req, res, join(appRoot.toString(), '.next', pathname));
     } else {
       app.render(req, res, '/');
     }
